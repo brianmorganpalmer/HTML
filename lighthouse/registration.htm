@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+
+File: registration.htm
+URL: www.brianmorganpalmer.com/html
+
+Copyright: Brian Morgan Palmer
+Author: Brian Palmer
+Revision: 1.0 - Feb 28, 2016
+Current: Aug 01, 2016
+	
+Technologies: 
+Java, JavaScript, PHP, SQL, HTML5, CSS3, C++, Android, LAMP, CMS
+
+Synopsis: 
+Full Stack Application Developer specializing in integrated open source technologies.
+
+-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="description" content="Full Stack Application Developer">
+<meta name="abstract" content="Working with HTML Forms">
+<meta name="keywords" content="Full Stack Application Developer">
+<meta name="author" content="Brian Palmer">
+<link rel="stylesheet" type="text/css" href="registration.css"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<title>Registration / Order Form</title>
+</head>
+
+<body id="registration">
+<div class="container">
+	
+<h1 id="rheading">Registration / Order Form</h1>
+
+<div id="topbar">
+  <ul>
+   <li><a href="./index.htm" alt="Home Page">Home</a></li>
+   <li><a href="#">Gallery</a></li>
+   <li><a href="#">LightBox</a></li>
+   <li><a href="./production.htm" alt="Production Table">Production</a></li>
+   <li><a href="./registration.htm">Registration</a></li>
+  </ul>
+</div>
+
+
+<form action="form_submit" method="get" accept-charset="utf-8">
+
+<!-- order should be centered  -->
+<div id="order">
+
+<table class="ftable">
+<tr>
+  <td class="rjust"><label for="textfield">First Name</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="fname" class="txt" type="text" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Last Name</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="lname" class="txt" type="text" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Email</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="email" class="txt" type="email" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Verify Email</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="verifyemail" class="txt" type="email" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Address</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="address" class="txt" type="text" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">City</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="city" class="txt" type="text" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">State</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+	<td class="ljust">
+	<select class="txt" name="state">
+	<option value="select">Select</option>
+	<option value="AL">AL</option>
+	<option value="AK">AK</option>
+	<option value="AZ">AZ</option>
+	<option value="AR">AR</option>
+	<option value="CA">CA</option>
+	<option value="CO">CO</option>
+	<option value="CT">CT</option>
+	<option value="DE">DE</option>
+	<option value="DC">DC</option>
+	<option value="FL">FL</option>
+	<option value="GA">GA</option>
+	<option value="HI">HI</option>
+	<option value="ID">ID</option>
+	<option value="IL">IL</option>
+	<option value="IN">IN</option>
+	<option value="IA">IA</option>
+	<option value="KS">KS</option>
+	<option value="KY">KY</option>
+	<option value="LA">LA</option>
+	<option value="ME">ME</option>
+	<option value="MD">MD</option>
+	<option value="MA">MA</option>
+	<option value="MI">MI</option>
+	<option value="MN">MN</option>
+	<option value="MS">MS</option>
+	<option value="MO">MO</option>
+	<option value="MT">MT</option>
+	<option value="NE">NE</option>
+	<option value="NV">NV</option>
+	<option value="NH">NH</option>
+	<option value="NJ">NJ</option>
+	<option value="NM">NM</option>
+	<option value="NY">NY</option>
+	<option value="NC">NC</option>
+	<option value="ND">ND</option>
+	<option value="OH">OH</option>
+	<option value="OK">OK</option>
+	<option value="OR">OR</option>
+	<option value="PA">PA</option>
+	<option value="RI">RI</option>
+	<option value="SC">SC</option>
+	<option value="SD">SD</option>
+	<option value="TN">TN</option>
+	<option value="TX">TX</option>
+	<option value="UT">UT</option>
+	<option value="VT">VT</option>
+	<option value="VA">VA</option>
+	<option value="WA">WA</option>
+	<option value="WV">WV</option>
+	<option value="WI">WI</option>
+	<option value="WY">WY</option>
+</select>
+</td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Zip Code</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="zip" class="txt" type="text" maxlength="5"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Phone</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust">
+  	<input id="areacode" class="txt" type="tel" size="3" maxlength="3">
+  	<input id="prefix" class="txt" type="tel" size="3" maxlength="3">
+  	<input id="pnumber" class="txt" type="tel" size="4" maxlength="4">
+  </td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Prefered Contact</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust">
+		<input type="radio" class="pref"  name="pref" value="email" checked>Email
+		<input type="radio" class="pref" name="pref" value="female">Phone
+	</td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">How do you<br> hear about us?</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><select class="txt" name="hear">
+		<option>Click to choose</option>
+		<option value="1">Existing Student</option>
+		<option value="2">Word of mouth</option>
+		<option value="3">Brochure</option>
+		<option value="4">Email mailshot</option>
+		<option value="5">Google</option>
+		<option value="6">Yahoo</option>
+		<option value="7">Bing</option>
+		<option value="8">Other search engine</option>
+		<option value="9">Other</option>
+		</select>
+	</td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Select Prefered Colors</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust">
+  	<input type="checkbox" class="pref" name="lightblue" checked>Light Blue
+		<input type="checkbox" class="pref" name="purple">Purple
+  	<input type="checkbox" class="pref" name="fushia">Fushia
+		<input type="checkbox" class="pref" name="none">None
+  </td>
+</tr>
+
+<tr class="txtarea">
+  <td class="rjust"><label for="textfield">Comments</label></td>
+  		<td><img class="reddot" src="circle_red.gif"></td>
+  		<td class="txtbox">
+  			<textarea class="txt" name="comments" cols="40" rows="8">Please tell us what you think about our website. What to add or remove?</textarea>
+	</td>
+</tr>
+
+<tr>
+  <td class="rjust"><label for="textfield">One-time<br>Registration Fees</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+	<td class="ljust">
+		<input id="fee" value="$9.99" class="txt" type="text" size="8" maxlength="10">
+		<input type="radio" class="pref"  name="pref" value="signup" checked>Yes! Sign Me Up
+		<input type="radio" class="pref" name="pref" value="remind">Remind Me Later
+</tr>
+</table>
+<!-- liked the format of the line outside of the table sytax
+		so I had to divide the form in two table instead of one big table -->
+<hr class="horzline"/>
+
+<table class="ftable">
+<tr>
+  <td class="rjust"><label for="textfield">Enter Login Username</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="username" class="txt" type="text" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Enter Login Password</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="pwd" class="txt" type="password" maxlength="30"></td>
+</tr>
+<tr>
+  <td class="rjust"><label for="textfield">Comfirm Password</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+  <td class="ljust"><input id="cpwd" class="txt" type="password" maxlength="30"></td>
+</tr>
+
+<tr>
+  <td class="rjust"><label for="textfield">Terms &amp; Conditions</label></td>
+  <td><img class="reddot" src="circle_red.gif"></td>
+	<td class="ljust"><input type="checkbox" class="pref" name="termcond">I have read the 
+		<a class="link" href="./termsandconditions.htm">Terms &amp; Conditions</a> of use
+</tr>
+</table>
+<hr class="horzline"/>
+<div class="btns">
+  <input id="sbtn" type="submit" value="Submit"/>
+  <input id="rbtn" type="reset" value="Reset"/>
+</div>
+
+</div> <!-- end order -->
+</form>
+
+</div> <!-- end of containor -->
+<footer>
+ <a href="./index.htm">Home</a> | Copyright &copy; Brian Palmer | Boston MA 02123 | <a href="mailto:brianmorganpalmer@gmail.com">Gmail</a>  
+</footer>
+</body>
+</html>
+
+	
+
+

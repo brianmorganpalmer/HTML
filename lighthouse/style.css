@@ -1,0 +1,344 @@
+@charset "utf-8";
+/*
+	Assignment 10
+	Nov 22, 2015
+  	CMT-111-WB - HTML & Dreamweaver
+	Instructor: T. Banjo
+	Project: Lighthouse Studio Update - Tables
+	Brian Palmer
+	
+	Notes: 
+	- Updated background color values
+	- Added production styles and formatting
+	- Added small border around sidebar - looks better
+	- Added registration page & styles
+*/
+
+/* Reset all browser styling attributes	*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #101010;
+	font-family: "Calibri", "Candara", "Arial", "Helvetica" sans-serif;
+	font-weight: normal;
+	font-size: 1.0em;
+	text-align: left;
+}
+
+/* Define new tags for older browser compatibility	*/
+/* By default unknown tags are defined inline		*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {
+    display: block;
+}
+
+body {
+	margin: 1px;
+ 	font-family: verdana, sans-serif;
+ 	color: black;
+}
+
+/* classes for image sizes */
+.smallimg {
+	width: 120px;
+ 	height: 90px;
+}
+.largeimg {
+	border: 1px solid rgba(0,0,0,.4);				/* added a border - looks better */
+	margin-top: 1%;
+	width: 90%;
+	height: 320px;
+}
+
+/* primary colors supported in all browsers */
+/* index page style and body of html pages moved below */
+/* #mother in production table needs to be the same as main for now */
+#main {
+	background-color: rgba(247, 155, 155, 1.0);		/* light coral */
+}
+
+#heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2%;
+  width: 90%;
+}
+
+#heading2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/* body div */
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+ 	font-style: normal;
+ 	margin-left: 2%;
+ 	margin-right: 4%;
+ }
+
+
+/******************/
+/* navigation bar */
+/******************/
+
+#topbar {
+	margin: 2% auto;
+	width: 80%;
+}
+
+#topbar ul {
+  	list-style-type: none;
+  	font-family: "Trebuchet MA", sans-serif;
+  	font-size: 1.0em;
+}
+ 
+#topbar ul li {
+	display: inline;
+	text-decoration: none;
+	color: purple;
+}
+
+#topbar ul li:first-child {
+	margin-left: 0;
+}
+
+#topbar ul li:last-child {
+	margin-right: 1%;
+}
+
+#topbar ul li a {
+	text-decoration: none;
+	color: white;
+	background-color: purple;
+	border: 1px solid gray;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin: 1%;
+}
+
+#topbar a:hover {
+ background-color: black;
+ color: white;
+ text-decoration: underline;
+} 
+
+
+/*************************/
+/* side image navigation */
+/************************/
+
+#picnav {
+  float: left;
+  margin: 0 auto;
+  padding: 2%;
+  padding-left: 3%;
+  width: 20%;
+  background-attachment: scroll;
+}
+
+#picnav ul {
+  	list-style-type: none;
+}
+
+#picnav ul li {
+	margin: 1%;
+	padding: 1%;
+}
+
+#picnav ul li:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#picnav ul li img {
+ border: 1px solid rgba(0,0,0,0.3);			/* added in assignment 10 */
+ display: block;
+ margin-bottom: 5%;
+}
+
+
+#picnav a:hover {
+	opacity: 0.6;
+}
+
+/**********************/
+/* main panel - right */
+/**********************/
+
+#content {
+	float: right;
+	margin: 0 auto;
+	width: 70%;
+	padding-right: 4%;
+	margin-top: 1%;
+}
+
+
+#content p {
+	margin: 1px;
+	margin-bottom: 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+/*********************************/
+/* Production Page Table styles  */
+/* Added for assignment 10		 */
+/*********************************/
+
+/* main - table */
+.maintable {
+	margin: 0 auto;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	width: 60%;
+}
+
+.maintable table {
+	padding: 2px;
+	width: 100%;
+}
+
+.maintable tr {
+
+	margin: 0 auto;
+	width: 100%;
+}
+
+.maintable td {
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+	width: 25%;
+}
+.maintable a:hover {
+	color: rgba(0,0,0,1);					/* black on hover */
+}
+
+.tableimage {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 20%;
+}
+
+.maintable img {
+	height: 100px;
+	width: 140px;
+}
+
+/* primary colors supported in all browsers 	*/
+/* colors styles for html pages and production table	*/
+
+#production {
+	background-color: rgba(32, 178, 170, 1.0);		/* light sea green */
+}
+
+#mother {
+	background-color: rgba(247, 155, 155, 1.0);		/* light coral same as main */
+}
+#mother td {
+	border: 1px solid rgba(247, 155, 155, 1.0);
+}
+#mother tr:last-child td:last-child {
+	background-color: rgba(247, 155, 155, 1.0);	
+}
+
+#sunflower {
+	background-color: rgba(173, 216, 230, 1.0);		/* light blue */
+}
+#sunflower td {
+	border: 1px solid rgba(173, 216, 230, 1.0);	
+}
+#sunflower tr:last-child td:last-child {
+	background-color: rgba(173, 216, 230, 1.0);
+}
+
+#beach {
+	background-color: rgba(135, 221, 191, 1);		/* auqa marine */
+}
+#beach td {
+	border: 1px solid rgba(135, 221, 191, 1);	
+}
+#beach tr:last-child td:last-child {
+	background-color: rgba(135, 221, 191, 1);	
+}
+
+#graduation {
+	background-color: rgba(112, 128, 144, .7);		/* slate grey */
+}
+#graduation td {
+	border: 1px solid rgba(112, 128, 144, .7);	
+}
+#graduation tr:last-child td:last-child {
+	background-color: rgba(112, 128, 144, .7);
+}
+
+#sunset {
+	background-color: rgba(250, 128, 114, 1);		/* orange - red */
+}
+#sunset td {
+	border: 1px solid rgba(250, 128, 114, 1);	
+}
+#sunset tr:last-child td:last-child {
+	background-color: rgba(250, 128, 114, 1);
+}
+
+#wedding {
+	background-color: rgba(239, 217, 177, 1.0);			/* wheat */
+}
+#wedding td {
+	border: 1px solid rgba(239, 217, 177, 1.0);	
+}
+#wedding tr:last-child td:last-child {
+	background-color: rgba(239, 217, 177, 1.0);
+}
+
+#sports {
+	background-color: rgba(0, 139, 139, 1);				/* dark cyan */
+}
+#sports td {
+	border: 1px solid rgba(0, 139, 139, 1);	
+}
+#sports tr:last-child td:last-child {
+	background-color: rgba(0, 139, 139, 1);
+}
+
+#terms {
+	background-color: rgba(119, 136, 153, 0.6);		/* light slate gray */
+}
+
+/* Standard copyright stuff */
+footer {
+	bottom: 0;
+	font-size: 12px;
+	color: white;
+	margin-top: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	letter-spacing: 0.3em;
+	border-top: 1px solid;
+	border-top-color: rgba(0,0,0,0.3);
+	margin: 0 auto;
+	width: 90%;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+}
