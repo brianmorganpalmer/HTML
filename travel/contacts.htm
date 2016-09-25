@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	
+File: contact.htm
+URL: www.brianmorganpalmer.com/html
+
+Copyright: Brian Morgan Palmer
+Author: Brian Palmer
+Revision: 1.0 - Feb 28, 2016
+Current: Aug 01, 2016
+
+Technologies: 
+Java, JavaScript, PHP, SQL, HTML5, CSS3, C++, Android, LAMP, CMS
+
+Synopsis: 
+Full Stack Application Developer specializing in integrated open source technologies.
+
+-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="Author" content="Brian Palmer">
+<meta name="Keywords" content="Full Stack Application Developer">
+<meta name="Description" content="Exotic Travel">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Exotic Travel</title>			
+</head>
+
+<body>
+<div class="travel">
+
+<div class="etheader">Exotic <span id="bold">Travel</span></div>
+
+<div class="topbanner">
+<table class="navtable">
+	<tr>
+	<td colspan="1" rowspan="2">
+
+	<div class="nav">
+  <ul>
+   <li><a href="./index.htm">homepage</a></li>
+   <li><a href="./about.htm">about</a></li>
+   <li><a href="./destinations.htm">destinations</a></li>
+   <li><a href="./book.htm">book a ticket</a></li>
+   <li><a href="./contacts.htm">contacts</a></li>
+  </ul>
+	</div>
+	<td colspan="3">
+		<img id="hotel" src="hotelscene.jpg">
+	</td>
+	
+	<tr>
+		<td colspan="3">
+			<div class="banner">The Perfect <span id="whitebold">Destination</span></div>
+	</td>
+	</tr>
+</table>
+
+</div> <!-- end top banner -->
+
+<hr class="four" />
+
+<div class="pagetext">
+
+<div class="pagebanner">Contact Us</div>
+
+<div class="about">
+	<p>Whether you are a long-time client or looking for a new travel professional, we are here to assist. 
+		We have made our reputation on putting our clients first. No request to big or small.</p>
+	<p>Please fill out the short form below so we can best direct your inquiry. 
+		If it is an urgent matter regarding a booked itinerary, please call 617.266.7646</p>
+<br>
+<form action="form_submit" method="get" accept-charset="utf-8">
+
+<!-- added to div to move input to center of page -->
+<div class="contact">
+<label for="textfield">First Name:</label><br>
+<input id="fname" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Last Name:</label><br>
+<input id="lname" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Email:</label><br>
+<input id="email" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Phone:</label><br>
+<input type="tel" class="txt1" size="12"  maxlength="12"><br>
+<label for="textfield">Interests</label><br>
+<select class="txt1" name="interested" width="20">
+		<option>Select a topic</option>
+		<option value="0">Business</option>
+		<option value="1">Family</option>
+		<option value="2">Exotic</option>
+		<option value="3">Wilderness</option>
+		<option value="4">Other</option>
+</select>
+<br>
+<br>
+<input type="checkbox" class="pref" name="sendemail" checked> Please contact my email address<br>
+<input type="checkbox" class="pref" name="callphone"> Please contact me by phone
+<br>
+<br>
+<input class="txt1" type="submit" value="Submit"/>
+</div>
+</form>	
+		
+	<p>For more information about a particular service, 
+		please contact us at <a href="mailto:contact@exotictravel.com">contact@exotictravel.com</a> or 617-266-7646.
+	</p>
+
+</div> <!-- about -->
+
+</div> <!-- end page text -->
+</div> <!-- end travel -->
+
+<div class="clear"> </div>
+
+<footer>
+ <a href="./index.htm">Home</a> | Copyright &copy; <a href="https://www.brianmorganpalmer.com">Brian Palmer</a> | 
+ Boston MA 02123 | <a href="mailto:brianmorganpalmer@gmail.com">Gmail</a>  
+</footer> 
+
+
+</body>
+</html>
