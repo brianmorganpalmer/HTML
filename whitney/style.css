@@ -1,0 +1,591 @@
+@charset "utf-8";
+/* 
+File: style.css
+URL: www.brianmorganpalmer.com/html
+
+Copyright: Brian Morgan Palmer
+Author: Brian Palmer
+Revision: 1.0 - Feb 28, 2016
+Current: Aug 01, 2016
+
+Technologies: 
+Java, JavaScript, PHP, SQL, HTML5, CSS3, C++, Android, LAMP, CMS
+
+Synopsis: 
+Full Stack Application Developer specializing in integrated open source technologies.
+
+ Some colors I like for this project
+ - rgb(255, 222, 173)	- navajo white
+ - rgb(139, 69, 19) - saddle brown
+ - rgb(244, 164, 96) - sandy brown
+ - rgb(244, 164, 96) - tan
+ - rgb(245, 222, 179) - wheat
+ 
+*/
+
+/* Font imports */
+@import url(http://fonts.googleapis.com/css?family=Diplomata);
+
+
+/* Reset all browser styling attributes	*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #101010;
+	font-family: "Candara", "Calibri", "Arial", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 1.0em;
+	text-align: left;
+}
+
+/* Define new tags for older browser compatibility	*/
+/* By default unknown tags are defined inline		*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {
+    display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	color: rgba(255, 222, 173, 0.9);
+	font-family: 'Diplomata', cursive;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 3px rgba(139, 69, 19, 1.0);
+	letter-spacing: 0.1em;
+	margin: 0 auto;
+	padding: 1% 0 2% 0;
+	width: 98%;
+}
+
+body {
+	background-color: rgba(245, 222, 179, 0.4);
+	padding: 0 1% 1% 1%;
+}
+
+.container {
+	background-color: rgba(244, 164, 96, 1);
+	background-image: url("bg-whitney.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	padding: 1%;
+	overflow: hidden;
+}
+
+.navbar {
+	margin: 0 auto;
+	text-align: center;
+	width: 82%;
+	padding-bottom: 2%;
+}
+
+.navbar ul {
+	text-align: center;
+}
+
+.navbar ul li {
+	display: inline;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.navbar a {
+	font-size: 1.2em;
+	color: rgba(139, 69, 19, 1.0);
+	text-shadow: 1px 1px rgba(255,255,255,0.8);
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.intro {
+	border: 1px solid rgba(245, 222, 179, 0.6);
+	float: left;
+	margin: 1% auto;
+	margin-top: 4%;
+	padding: 2%;
+	width: 25%;
+}
+
+.intro p {
+	color: rgba(165, 42, 42, 1);
+}
+
+.intro p:first-letter {
+	color: rgba(142, 39, 39, 1.0);
+	font-size: 1.3em;
+}
+
+.banner {
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	width: 90%;
+}
+
+.photobanner {
+ height: 233px;
+ width: 3650px;
+}
+
+hr {
+	border-top: 1px solid rgba(245, 222, 179, 0.3);
+	margin: 0 auto;
+	margin-top: 1%;
+	width: 88%;
+}
+
+.photobanner img {
+	height: 180px;
+	width: 180px;
+	padding: 1%;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+ -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -o-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+ cursor: pointer;
+ 
+ -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.first {
+ -webkit-animation: bannermove 40s linear infinite;
+    -moz-animation: bannermove 40s linear infinite;
+     -ms-animation: bannermove 40s linear infinite;
+      -o-animation: bannermove 40s linear infinite;
+         animation: bannermove 40s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+
+
+.disclaimer {
+	color: rgba(139, 69, 19, 0.6);
+	font-size: 0.8em;
+	font-style: italic;
+	margin: 1% auto;
+	padding: 1%;
+	text-align: center;
+	width: 80%;
+}
+
+
+/* Standard copyright stuff with bhcc & email links */
+footer {
+	bottom: 0;
+	font-size: 0.8em;
+	color: rgba(139, 69, 19, 0.8);
+	padding-top: 2%;
+	text-align: center;
+	letter-spacing: 0.3em;
+	border-top: 1px solid rgba(139, 69, 19, 0.4);
+	margin: 1% auto;
+	width: 90%;
+}
+
+footer a {
+	color: rgba(139, 69, 19, 0.8);
+	text-decoration: none;
+}
+
+footer a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+/* 
+ * life page
+ */
+
+.l-container {
+	background-color: rgba(222, 184, 135, 0.8);
+	padding: 1%;
+}
+
+.l-intro {
+	border: 1px solid rgba(245, 222, 179, 1);
+	background-color: rgba(245, 222, 179, 0.3);
+	float: left;
+	margin: 4% auto;
+	margin-top: 8%;
+	padding: 2%;
+	width: 24%;
+}
+
+.l-intro p {
+	color: rgba(165, 42, 42, 1);
+	padding: 1%;
+}
+
+.bio {
+	float: left;
+	margin: 0 auto;
+	padding: 2% 2% 4% 8%;
+	width: 50%;
+}
+
+.bio h4 {
+	color: rgba(139, 69, 19, 1.0);
+	font-family: 'Diplomata', cursive;
+	font-size: 1.4em;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.bio img {
+	height: 120px;
+	width: 120px;
+	margin: 4% auto;
+}
+
+.bio img:hover {
+	border-top: solid 2px rgba(165, 42, 42, 1.0);
+	border-bottom: solid 3px rgba(165, 42, 42, 1.0);
+	opacity: 0.6;
+}
+
+.bio table {
+	border: solid 1px rgba(139, 69, 19, 1.0);
+	margin: 1% auto;
+}
+
+
+.bio td {
+	border: solid 1px rgba(139, 69, 19, 1.0);
+	margin: 2% auto;
+}
+
+.txt {
+	color: rgba(165, 42, 42, 1);
+	background-color: rgba(250, 235, 215, 1);
+	font-family: "Candara", "Calibri", "Arial", "Helvetica", sans-serif;
+	font-size: 0.9em;
+	text-align: left;
+	padding: 2%;
+}
+
+.bio a {
+	color: rgba(165, 42, 42, 0.8);
+	font-style: italic;
+	text-decoration: none;
+}
+
+.bio a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+/*
+ * Music page styles
+ */
+
+.m-container {
+	background-color: rgba(222, 184, 135, 0.8);
+	padding: 1%;
+}
+
+.m-intro {
+	border: 1px solid rgba(245, 222, 179, 1);
+	background-color: rgba(245, 222, 179, 0.3);
+	float: left;
+	margin: 4% auto;
+	margin-top: 8%;
+	padding: 2%;
+	width: 24%;
+}
+
+.m-intro p {
+	color: rgba(165, 42, 42, 1);
+	padding: 1%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bold:first-letter {
+	color: rgba(142, 39, 39, 1.0);
+	font-size: 1.3em;
+}
+
+.m-intro ul {
+	margin: 1% auto;
+}
+
+.m-intro ul li {
+	list-style-image: url("gold_star.gif");
+	list-style-position: inside;
+	padding: 1%;
+}
+
+.m-intro a {
+	color: rgba(116, 36, 36, 1.0);
+	font-size: 0.9em;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.m-intro a:hover {
+	text-decoration: underline;
+}
+
+.albums {
+	border-top: 1px solid rgba(139, 69, 19, 0.4);
+	margin: 1% auto;
+	padding: 1%;
+	width: 88%;
+}
+
+#ahead {
+	color: rgba(139, 69, 19, 1.0);
+	font-family: 'Diplomata', cursive;
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+	text-align: center;
+	padding: 1%;
+}
+
+.albums img {
+	height: 100px;
+	width: 100px;
+	padding: 1%;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.albums img:hover {
+ -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -o-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+ cursor: pointer;
+ 
+ -webkit-box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+ -moz-box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+ box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+}
+
+.albums ul {
+	text-align: center;
+}
+
+.albums ul li {
+	display: inline;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+/*
+ * Death and Memorial page
+ */
+
+.d-container {
+	background-color: rgba(222, 184, 135, 0.8);
+	padding: 1%;
+}
+
+.d-intro {
+	border: 1px solid rgba(245, 222, 179, 1);
+	background-color: rgba(245, 222, 179, 0.3);
+	float: left;
+	margin: 4% auto;
+	margin-top: 8%;
+	padding: 2%;
+	width: 24%;
+}
+
+.d-intro p {
+	color: rgba(165, 42, 42, 1);
+	padding: 1%;
+}
+
+.family {
+	border-top: 1px solid rgba(139, 69, 19, 0.4);
+	margin: 1% auto;
+	padding: 1%;
+	width: 88%;
+}
+
+.family img {
+	height: 125px;
+	width: 125px;
+	padding: 1%;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.family img:hover {
+ -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -o-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+ cursor: pointer;
+ 
+ -webkit-box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+ -moz-box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+ box-shadow: 0px 3px 5px rgba(139, 69, 19, 0.4);
+}
+
+
+.family ul {
+	text-align: center;
+}
+
+.family ul li {
+	display: inline;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+/*
+ * contact
+ * 
+ */
+
+
+.c-container {
+	background-color: rgba(222, 184, 135, 0.8);
+	padding: 1%;
+}
+
+.c-intro {
+	border: 1px solid rgba(245, 222, 179, 1);
+	background-color: rgba(245, 222, 179, 0.3);
+	float: left;
+	margin: 4% auto;
+	margin-top: 8%;
+	padding: 2%;
+	width: 24%;
+}
+
+.c-intro p {
+	color: rgba(165, 42, 42, 1);
+	padding: 1%;
+}
+
+.contact {
+	float: left;
+	margin: 0 auto;
+	padding: 0 2% 2% 8%;
+	width: 45%;
+}
+
+.contact h4 {
+	color: rgba(139, 69, 19, 1.0);
+	font-family: 'Diplomata', cursive;
+	font-size: 1.6em;
+	letter-spacing: 0.2em;
+	text-align: center;
+	padding: 2% 0 1% 0;
+}
+
+.contact p {
+	color: rgba(165, 42, 42, 1);
+	text-align: center;
+	padding: 1%;
+}
+
+.contact a {
+	color: rgba(165, 42, 42, 1);
+}
+
+form {
+	border: 1px solid rgba(245, 222, 179, 0.7);
+	margin: 1% 1% 2% 4%;
+	padding: 1% 1% 2% 1%;
+}
+
+.txtarea {
+	border: 1px solid rgba(47, 79, 79, 1);
+	margin-top: 3%;
+	resize: none;
+}
+
+.center {
+	margin: 1% 0 1% 2%;
+	padding: 1%;
+}
+
+.txt1 {
+	border: 1px solid rgba(47, 79, 79, 1);
+	margin-bottom: 1%;
+}
+
+
+
+
+
+
