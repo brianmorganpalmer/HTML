@@ -1,0 +1,304 @@
+@charset "utf-8";
+/*
+	Assignment 12
+	Dec. 6, 2015
+	BHCC - CMT-125-WB
+	Instructor: T. Banjo
+	Project: Exotic Travel
+	File: style.css 
+	Brian Palmer
+ */
+
+/* Font imports */
+@import url(http://fonts.googleapis.com/css?family=Diplomata);
+
+/* reset the browser defaults */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #101010;
+	font-family: "Candara", "Calibri", "Arial", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 1.0em;
+	text-align: left;
+}
+
+/* Define new tags for older browser compatibility	*/
+/* By default unknown tags are defined inline		*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {
+    display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	background-color: rgba(176, 196, 222,1);			/* light steel blue */
+	margin: 0 auto;
+	width: 90%;
+}
+
+.mainlist li {
+	margin-left: 8%;
+	width: 80%;
+	padding: 1%;
+}
+
+.travel {
+	margin: 0 auto;
+	padding: 1%;
+	width: 84%;
+}
+
+.etheader {
+  color: rgba(91, 105, 119, 1);               			/* dark grey */
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 0.5em;
+  padding: 1% 0 1% 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.topbanner {
+	padding-bottom: 2%;
+	width: 100%;
+}
+
+.nav {
+  background-color: rgba(0, 139, 139,1);			/* dark cyan */
+  height: 100%;
+  width: 100%;
+}
+
+.nav ul {
+	list-style: inside square;
+}
+
+.nav ul li {
+	color: white;
+	margin-left: 8%;
+	padding: 1%;
+	font-size: 1.2em;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+}
+
+.banner {
+	color: white;
+	background-color: rgba(95, 158, 160, 1);  /* cadet blue */
+	font-size: 1.8em;
+	float: right;
+	text-align: left;
+	letter-spacing: 0.2em;
+	padding: 1%;
+	padding-left: 2%;
+	margin-right: 2%;
+	width: 98%;
+}
+
+.boldwhite {
+	color: white;
+	font-weight: bold;
+}
+
+.navtable {
+	background-color: rgba(0, 139, 139, 1);
+	margin: 1% 2% 1% 0;
+	padding: 1% 3% 1% 0;
+	width: 96%;
+	height: 80%;
+}
+
+.navtable tr {
+	vertical-align: middle;
+}
+
+.navtable td {
+	width: 1%;
+}
+
+.navtable img {
+	float: right;
+	height: 160px;
+	padding-right: 1%;
+	margin: 1%;
+	width: 100%;
+}
+
+.four { 
+	height: 12px; 
+	border: 0; 
+	box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.5);
+	margin-top: 1%;
+	padding: 2% 0 1% 2%;
+	width: 96%;
+}
+
+.five {
+	float: right;
+	height: 10px; 
+	border: 0; 
+	box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.5);
+	margin: 1% 4% 1% 0;
+	text-align: center;
+	width: 42%;
+}
+
+.textarea {
+	vertical-align: top;
+	width: 98%;
+}
+
+.news {
+	background-color: lightgrey;
+	border: 1px solid white;
+	float: left;
+	height: 100%;
+	margin: 2% auto;
+	padding: 4% 2% 4% 2%;
+	vertical-align: top;
+	width: 45%;
+}
+
+.news img {
+	border: 2px solid rgba(135, 206, 235, 1);   	/* sky blue */
+	margin: 2% 0 3% 2%;
+	height: 250px;
+	width: 90%;
+}
+
+#usa img {
+	border: 0;
+	float: left;
+	margin: 8px 5px 5px 0;
+	height: 50px;
+	width: 50px;
+}
+
+.welcome {
+	background-color: lightgrey;
+	border: 1px solid white;
+	float: right;
+	height: 50%;
+	margin: 2% auto;
+	padding: 4% 2% 4% 2%;
+	width: 45%;
+}
+
+.hot {
+	background-color: lightgrey;
+	border: 1px solid white;
+	float: right;
+	height: 50%;
+	margin: 0 auto;
+	padding: 2%;
+	width: 45%;
+}
+
+.hot img {
+	margin: 1%;
+	padding: 1%;
+	height: 250px;
+	width: 90%;
+}
+
+h1 {
+	color: rgba(139, 0, 0, 1);						/* dark red */
+	font-size: 1.4em;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 0 0 2% 0;
+}
+
+h2 {
+	color: rgba(47, 79, 79,1);					/* dark slate grey */
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 1% 0;
+}
+
+h3 {
+	color: rgba(0, 0, 205,1);						/* medium blue */
+	font-size: 1.0em;
+	font-variant: small-caps;
+	padding: 0 0 1% 0;
+}
+
+.pagetext {
+	margin: 1% auto;
+	padding: 1% 4% 1% 1%;
+	width: 70%;
+}
+
+.about {
+	margin: 1%;
+	padding: 1%;
+	width: 90%;
+}
+
+.about p {
+	margin: 2% 0 1% 0;
+}
+.pagebanner {
+	color: white;
+	background-color: rgba(95, 158, 160, 1);  /* cadet blue */
+	font-size: 1.8em;
+	text-align: left;
+	letter-spacing: 0.2em;
+	padding: 1%;
+	margin: 2%;
+	width: 90%;
+}
+
+.destimgs img {
+	border: 2px solid white;
+	margin: 4%;
+	height: 200px;
+	width: 200px;
+}
+
+.contact {
+	margin: 2% 0 4% 6%;
+}
+
+.txt1 {
+	border: 1px solid rgba(47, 79, 79, 1);
+	margin: 1% 0 1% 0;
+}
+
+/* Standard copyright stuff */
+footer {
+	bottom: 0;
+	font-size: 12px;
+	color: rgba(110, 110, 230, 1);
+	padding-top: 2%;
+	padding-bottom: 1%;
+	text-align: center;
+	letter-spacing: 0.6em;
+	border-top: 1px solid;
+	border-top-color: rgba(110, 110, 230, 1);				/* ocean blue */
+	margin: 3% auto;
+	width: 90%;
+}
+
+footer a {
+	color: rgba(110, 110, 230, 1);
+	text-decoration: none;
+}
+
+footer a:hover {
+	font-weight: bolder;
+	text-decoration: underline;
+}

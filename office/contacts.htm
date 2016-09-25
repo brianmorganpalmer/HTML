@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Assignment 12
+	Dec. 6, 2015
+  CMT-111-WB - HTML & Dreamweaver
+	Instructor: T. Banjo
+	Project: Exotic Travel
+	Brian Palmer
+	
+	Notes:
+
+	- You are required to create a 5-page website for the EXOTIC TRAVEL company similar to the image.
+	 As in the image, use similar layout, colors, relevant images and content.
+	 
+	- Ensure that each of the pages (Home, About Us, Destinations, Book A Ticket, Contacts) 
+	contain relevant images and content.
+	
+	- Include an HTML form on the contact page with relevant form elements that request enough
+	 information appropriate for a Travel/Tours website.
+
+	- Ensure that your website is appealing with a professional look.
+	Your final product must closely match the original image.
+	 
+-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="Author" content="Brian Palmer">
+<meta name="Keywords" content="Assignment 12">
+<meta name="Description" content="Exotic Travel">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>Not Just Cubes</title>			
+</head>
+
+<body>
+<div class="travel">
+
+<div class="etheader">Not <span id="bold">Just Cubes</span></div>
+
+<div class="topbanner">
+<table class="navtable">
+	<tr>
+	<td colspan="1" rowspan="2">
+
+<div class="nav">
+  <ul>
+   <li><a href="./index.htm">homepage</a></li>
+   <li><a href="./about.htm">about</a></li>
+   <li><a href="#">services</a></li>
+   <li><a href="#">questions</a></li>
+   <li><a href="./contacts.htm">contact</a></li>
+  </ul>
+</div>
+	<td colspan="3">
+		<img id="hotel" src="office.jpg">
+	</td>
+	<tr>
+		<td colspan="3">
+			<div class="banner">Office Systems<br><span id="whitebold">and much more</span></div>
+	</td>
+	</tr>
+</table>
+
+</div> <!-- end top banner -->
+
+<hr class="four" />
+
+<div class="pagetext">
+
+<div class="pagebanner">Contact Us</div>
+
+<div class="about">
+	<p>Whether you are a first-time client or looking for a new office professional, we are here to assist. 
+		We have made our reputation on putting our clients first. No request to big or small.</p>
+	<p>Please fill out the short form below so we can best direct your inquiry. 
+		If it is an urgent matter regarding a booked itinerary, please call 617.959.4729</p>
+<br>
+<form action="form_submit" method="get" accept-charset="utf-8">
+
+<!-- added to div to move input to center of page -->
+<div class="contact">
+<label for="textfield">First Name:</label><br>
+<input id="fname" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Last Name:</label><br>
+<input id="lname" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Email:</label><br>
+<input id="email" class="txt1" type="text" maxlength="20"><br>
+<label for="textfield">Phone:</label><br>
+<input type="tel" class="txt1" size="12"  maxlength="12"><br>
+<label for="textfield">Interests</label><br>
+<select class="txt1" name="interested" width="20">
+		<option>Select a topic</option>
+		<option value="0">Business</option>
+		<option value="1">Relocation</option>
+		<option value="2">Technology</option>
+		<option value="3">Storage</option>
+		<option value="4">Other</option>
+</select>
+<br>
+<br>
+<input type="checkbox" class="pref" name="sendemail" checked> Please contact my email address<br>
+<input type="checkbox" class="pref" name="callphone"> Please contact me by phone
+<br>
+<br>
+<input class="txt1" type="submit" value="Submit"/>
+</div>
+</form>	
+		
+	<p>For more information about a particular service, 
+		please contact us at <a href="mailto:contact@notcubes.com">contact@notcubes.com</a> or 617-959-4729.
+	</p>
+
+</div> <!-- about -->
+
+</div> <!-- end page text -->
+</div> <!-- end travel -->
+
+<div class="clear"> </div>
+
+<footer>
+ <a href="./index.htm">Home</a> |  30 Newbury Street Boston MA 02116 |
+ <a href="mailto:brian.morgan.palmer@gmail.com">Email Us</a>  
+</footer>
+
+
+</body>
+</html>
